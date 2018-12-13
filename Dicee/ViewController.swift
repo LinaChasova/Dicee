@@ -30,10 +30,12 @@ class ViewController: UIViewController {
         
         // what should happen when roll button is pressed
         
-        randomDiceIndex1 = Int(arc4random_uniform(5))
-        randomDiceIndex2 = Int(arc4random_uniform(5))
+        randomDiceIndex1 = Int(arc4random_uniform(6))
+        randomDiceIndex2 = Int(arc4random_uniform(6))
         
-        print(randomDiceIndex1)
+        diceImageView1.image = UIImage(named: "dice\(randomDiceIndex1 + 1)")
+        diceImageView2.image = UIImage(named: "dice\(randomDiceIndex2 + 1)")
+        
     }
     
 }
